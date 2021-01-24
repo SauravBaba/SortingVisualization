@@ -3,7 +3,7 @@
 
 
 
-![alt text](https://github.com/alikhutaba/sorting-visualizer/blob/master/public/Screenshot.png?raw=true)
+![alt text](https://github.com/SauravBaba/SortingVisualization/blob/main/Sorting.PNG)
 
 
 
@@ -12,7 +12,7 @@
 
 Sorting Visualizer is an application that visualizes sorting algorithms in action.
 
-Live Demo - https://alikhutaba.github.io/sorting-visualizer/
+Live Demo -https://sauravbaba.github.io/SortingVisualization/
 
 Implemented Algorithm:
 
