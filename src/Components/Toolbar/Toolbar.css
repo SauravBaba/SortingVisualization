@@ -1,0 +1,221 @@
+.main {
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  position: fixed;
+  bottom: 0%;
+  background-color: #282c34;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#menu {
+  width: 100%;
+  height: unset;
+}
+
+.main-btn {
+  text-align: center;
+  margin-left: 0.3%;
+  margin-right: 0.3%;
+  margin-top: 0.8%;
+  margin-bottom: 1%;
+  font-family: cursive;
+  font-size: 100%;
+  width: 11%;
+  height: 50%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.btn-circle.btn-lg {
+  text-align: center;
+  width: 4%;
+  height: 75%;
+  font-size: 90%;
+  line-height: 1.33;
+  border-radius: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.hamburger-menu {
+  display: none;
+
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#hamburger-icon {
+  width: 60px;
+  height: 45px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  float: right;
+}
+
+#hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background: #61dafb;
+
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+
+#hamburger-icon span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger-icon span:nth-child(2),
+#hamburger-icon span:nth-child(3) {
+  top: 14px;
+}
+
+#hamburger-icon span:nth-child(4) {
+  top: 28px;
+}
+
+#hamburger-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#hamburger-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#hamburger-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#hamburger-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.sort-mobile-button {
+  display: none;
+}
+
+#sort-button {
+  display: unset;
+  text-align: left;
+}
+
+@media (max-width: 1550px) {
+  .main-btn {
+    font-size: 1.2vw;
+    font-weight: bolder;
+  }
+
+  .btn-circle.btn-lg {
+    font-size: 1.2vw;
+    font-weight: bolder;
+    text-indent: -7px;
+  }
+}
+
+@media (max-width: 850px) {
+  .main {
+    height: 55px;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu menu {
+    height: 0px;
+  }
+
+  #hamburger-icon.open menu {
+    height: 450px;
+  }
+
+  #menu {
+    width: 100%;
+    height: 0px;
+    position: fixed;
+    z-index: 1;
+    bottom: 55px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    background-color: #282c34;
+    padding-top: 10px;
+  }
+
+  #menu.op {
+    width: 100%;
+    height: 450px;
+    position: fixed;
+    z-index: 1;
+    bottom: 55px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    background-color: #282c34;
+    padding-top: 10px;
+  }
+
+  .main-btn {
+    text-align: center;
+    font-family: cursive;
+    font-size: 100%;
+    width: 90%;
+    height: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  #sort-button {
+    display: none;
+  }
+  .sort-mobile-button {
+    display: unset;
+  }
+  .btn-circle.btn-lg,
+  .sort-mobile-button {
+    /* display: none; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 150px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: #61dafb;
+    font-size: 25px;
+    border-color: #61dafb;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
